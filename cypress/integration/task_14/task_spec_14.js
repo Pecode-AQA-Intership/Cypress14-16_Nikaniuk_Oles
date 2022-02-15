@@ -3,9 +3,9 @@ import {
     RANDOM_EMAIL,
     RANDOM_ADDRESS,
     RANDOM_PERNAMENT_ADDRESS,
-} from "../../config_test_data/test_data.js"
+} from "../../config_test_data/test_data.js";
 
-import {SELECTOR_BOX} from "../../config_test_data/selectors_text_box.js"
+import {SELECTOR_BOX} from "../../config_test_data/selectors_text_box.js";
 
 describe("Populating and submitting the 'Text Box' form", () => {
     before(() => {

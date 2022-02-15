@@ -1,6 +1,5 @@
-/// <reference types="cypress" />
 const { _ } = Cypress;
-import {SELECTOR_TABLES} from "../../config_test_data/selectors_web_tables.js"
+import {SELECTOR_TABLES} from "../../config_test_data/selectors_web_tables.js";
 import {
   RANDOM_FIRST_NAME,
   RANDOM_LAST_NAME,
@@ -8,7 +7,7 @@ import {
   RANDOM_AGE,
   RANDOM_SALARY,
   RANDOM_DEPARTMENT,
-} from "../../config_test_data/test_data.js"
+} from "../../config_test_data/test_data.js";
 
 describe("Ensure that a new user could be added to the table thru 'Registration form'", () => {
   before(() => {
