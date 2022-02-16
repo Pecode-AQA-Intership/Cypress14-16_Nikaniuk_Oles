@@ -1,4 +1,4 @@
-import {SELECTOR_PRACTICE_FORM} from "../../config_test_data/selectors_practice_form.js";
+import {SELECTOR_PRACTICE_FORM} from "../../page-objects/practice_Form.js";
 import {
     RANDOM_FIRST_NAME,
     RANDOM_LAST_NAME,
@@ -18,7 +18,7 @@ import {
     UTTAR_PRADESH_CITY,
     HARYANA_CITY,
     RAJASTHAN_CITY
-  } from "../../config_test_data/test_data.js";
+  } from "../../page-objects/test_data.js";
 
 describe("Check required and optional fields on the 'Student Registration Form'", () => {
     before(() => {

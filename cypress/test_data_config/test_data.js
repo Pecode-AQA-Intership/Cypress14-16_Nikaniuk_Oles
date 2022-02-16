@@ -7,7 +7,7 @@ import {
     putUttarPradeshCity,
     putHaryanaCity,
     putRajasthanCity
-} from "./functions_16.js";
+} from "./functions.js";
 
 export const RANDOM_NAME = faker.name.findName();
 export const RANDOM_EMAIL = faker.internet.email();
