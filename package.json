@@ -1,4 +1,4 @@
-  {
+{
   "name": "function",
   "version": "1.0.0",
   "description": "aqa task",
@@ -9,7 +9,7 @@
   "author": "AQA team",
   "license": "ISC",
   "devDependencies": {
-    "cypress": "^9.4.1"
+    "cypress": "^9.5.0"
   },
   "dependencies": {
     "faker": "^5.5.3"

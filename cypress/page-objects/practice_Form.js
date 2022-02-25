@@ -1,37 +1,125 @@
-export const SELECTOR_PRACTICE_FORM = {
-    firstName: "#firstName",
-    lastName: "#lastName",
-    userEmail: "#userEmail",
-    maleRadioButton: "#gender-radio-1",
-    femaleRadioButton: "#gender-radio-2",
-    otherRadioButton: "#gender-radio-3",
-    userNumber: "#userNumber",
-    dateOfBirthInput: "#dateOfBirthInput",
-    dateOfBirthYearPicker: ".react-datepicker__year-select",
-    dateOfBirthMonthPicker: ".react-datepicker__month-select",
-    dateOfBirthWeekPicker: ".react-datepicker__week",
-    subjectsContainer: "#subjectsContainer",
-    subjectItem: ".subjects-auto-complete__multi-value__label",
-    sportsCheckbox: "#hobbies-checkbox-1",
-    readingCheckbox: "#hobbies-checkbox-2",
-    musicCheckbox: "#hobbies-checkbox-3",
-    uploadPicture: "#uploadPicture",
-    currentAddress: "#currentAddress",
-    stateDropdown: "#state",
-    stateContainer: "#state [class$='singleValue']",
-    cityDropdown: "#city",
-    cityContainer: "#city [class$='singleValue']",
-    cityInput: "#city #react-select-4-input",
-    submitButton: "#submit",
-    welcomeModal: "#example-modal-sizes-title-lg",
-    userNameValue: "tr:nth-child(1) td:nth-child(2)",
-    userEmailValue:"tr:nth-child(2) td:nth-child(2)",
-    userGenderValue:"tr:nth-child(3) td:nth-child(2)",
-    userNumberValue:"tr:nth-child(4) td:nth-child(2)",
-    userdateOfBirthValue:"tr:nth-child(5) td:nth-child(2)",
-    subjectValue:"tr:nth-child(6) td:nth-child(2)",
-    hobbieValue:"tr:nth-child(7) td:nth-child(2)",
-    pictureValue:"tr:nth-child(8) td:nth-child(2)",
-    currentAddressValue:"tr:nth-child(9) td:nth-child(2)",
-    stateAndCityValue:"tr:nth-child(10) td:nth-child(2)"
-}
+import CommonPage from "./common_Page.js"
+class PracticeForm extends CommonPage {
+    maleGenderRadioButton() {
+        return cy.get("#gender-radio-1");
+    };
+
+    femaleGenderRadioButton() {
+        return cy.get("#gender-radio-2");
+    };
+
+    otherGenderRadioButton() {
+        return cy.get("#gender-radio-3");
+    };
+
+    userPhoneNumberField() {
+        return cy.get("#userNumber");
+    };
+
+    dateOfBirthInputField() {
+        return cy.get("#dateOfBirthInput");
+    };
+
+    dateOfBirthYearPicker() {
+        return cy.get(".react-datepicker__year-select");
+    };
+
+    dateOfBirthMonthPicker() {
+        return cy.get(".react-datepicker__month-select");
+    };
+
+    dateOfBirthWeekPicker() {
+        return cy.get(".react-datepicker__week");
+    };
+
+    subjectsContainerField() {
+        return cy.get("#subjectsContainer");
+    };
+    
+    subjectItem() {
+        return cy.get(".subjects-auto-complete__multi-value__label");
+    };
+
+    sportsHobbieCheckbox() {
+        return cy.get("#hobbies-checkbox-1");
+    };
+
+    readingHobbieCheckbox() {
+        return cy.get("#hobbies-checkbox-2");
+    };
+
+    musicHobbieCheckbox() {
+        return cy.get("#hobbies-checkbox-3");
+    };
+
+    uploadPictureContainer() {
+        return cy.get("#uploadPicture");
+    };
+
+    statesDropdownList() {
+        return cy.get("#react-select-3-input");
+    };
+
+    statesContainerField() {
+        return cy.get("#state [class$='singleValue']");
+    };
+
+    citiesDropdownList() {
+        return cy.get("#react-select-4-input");
+    };
+
+    citiesContainerField() {
+        return cy.get("#city [class$='singleValue']");
+    };
+
+    cityInput() {
+        return cy.get("#city #react-select-4-input");
+    };
+
+    welcomeModalWindow() {
+        return cy.get(".modal-content");
+    };
+
+    userNameValue() {
+        return cy.get("tr:nth-child(1) td:nth-child(2)");
+    };
+
+    userEmailValue() {
+        return cy.get("tr:nth-child(2) td:nth-child(2)");
+    };
+
+    userGenderValue() {
+        return cy.get("tr:nth-child(3) td:nth-child(2)");
+    };
+
+    userPhoneNumberValue() {
+        return cy.get("tr:nth-child(4) td:nth-child(2)");
+    };
+
+    userdateOfBirthValue() {
+        return cy.get("tr:nth-child(5) td:nth-child(2)");
+    };
+
+    subjectValue() {
+        return cy.get("tr:nth-child(6) td:nth-child(2)");
+    };
+
+    hobbieValue() {
+        return cy.get("tr:nth-child(7) td:nth-child(2)");
+    };
+
+    pictureValue() {
+        return cy.get("tr:nth-child(8) td:nth-child(2)");
+    };
+
+    currentAddressValue() {
+        return cy.get("tr:nth-child(9) td:nth-child(2)");
+    };
+
+    stateAndCityValue() {
+        return cy.get("tr:nth-child(10) td:nth-child(2)");
+    };
+};
+
+export default PracticeForm;
+
